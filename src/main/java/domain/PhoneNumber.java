@@ -1,16 +1,33 @@
 package domain;
 
+import com.google.gson.annotations.SerializedName;
+
 public class PhoneNumber {
 	
+	private String number;
+	@SerializedName("local_format")
 	private String localFormat;
+	@SerializedName("international_format")
 	private String internationalFormat;
+	@SerializedName("country_prefix")
 	private String countryPrefix;
+	@SerializedName("country_code")
 	private String countryCode;
+	@SerializedName("country_name")
 	private String countryName;
 	private String location;
 	private String carrier;
+	@SerializedName("line_type")
 	private String lineType;
 	
+	
+	
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
 	public String getLocalFormat() {
 		return localFormat;
 	}
@@ -59,12 +76,15 @@ public class PhoneNumber {
 	public void setLineType(String lineType) {
 		this.lineType = lineType;
 	}
+	
 	@Override
 	public String toString() {
-		return "PhoneNumber [localFormat=" + localFormat + ", internationalFormat=" + internationalFormat
-				+ ", countryPrefix=" + countryPrefix + ", countryCode=" + countryCode + ", countryName=" + countryName
-				+ ", location=" + location + ", carrier=" + carrier + ", lineType=" + lineType + "]";
+		return "PhoneNumber [number=" + number + ", localFormat=" + localFormat + ", internationalFormat="
+				+ internationalFormat + ", countryPrefix=" + countryPrefix + ", countryCode=" + countryCode
+				+ ", countryName=" + countryName + ", location=" + location + ", carrier=" + carrier + ", lineType="
+				+ lineType + "]";
 	}
+	
 	
 	
 	
