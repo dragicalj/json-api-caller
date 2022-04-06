@@ -20,8 +20,26 @@ public class PhoneNumber {
 	@SerializedName("line_type")
 	private String lineType;
 	
+	public PhoneNumber() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	
+	public PhoneNumber(String number, String localFormat, String internationalFormat, String countryPrefix,
+			String countryCode, String countryName, String location, String carrier, String lineType) {
+		super();
+		this.number = number;
+		this.localFormat = localFormat;
+		this.internationalFormat = internationalFormat;
+		this.countryPrefix = countryPrefix;
+		this.countryCode = countryCode;
+		this.countryName = countryName;
+		this.location = location;
+		this.carrier = carrier;
+		this.lineType = lineType;
+	}
+
+
 	public String getNumber() {
 		return number;
 	}
