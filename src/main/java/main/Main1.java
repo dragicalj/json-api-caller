@@ -15,7 +15,7 @@ import domain.PhoneNumber;
 
 public class Main1 {
 
-	public static String ACCESS_KEY = "1b0c5758f2d3943282b96e06c51f00a4";
+	public static String ACCESS_KEY = "";
 	public static String NUMBER = "14158586273";
 
 	public static void main(String[] args) {
